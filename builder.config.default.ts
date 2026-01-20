@@ -59,7 +59,7 @@ export default defineBuilderConfig(() => ({
   plugins: [
     githubRepoSyncPlugin({
       repo: {
-        enable: false,
+        enable: true,
         url: process.env.BUILDER_REPO_URL ?? '',
         token: env.GIT_TOKEN,
         branch: process.env.BUILDER_REPO_BRANCH ?? 'main',
