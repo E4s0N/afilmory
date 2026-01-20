@@ -2,7 +2,6 @@ import os from 'node:os'
 
 import { defineBuilderConfig, githubRepoSyncPlugin } from '@afilmory/builder'
 
-import { env } from './env.js'
 
 export default defineBuilderConfig(() => ({
   storage: {
@@ -43,7 +42,7 @@ export default defineBuilderConfig(() => ({
       repo: {
         enable: true,
         url: process.env.BUILDER_REPO_URL ?? '',
-        token: env.GIT_TOKEN,
+        token: process.env.GIT_TOKEN,
         branch: process.env.BUILDER_REPO_BRANCH ?? 'main',
       },
     }),

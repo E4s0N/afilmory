@@ -20,3 +20,4 @@ apps/web/src/data/photos-manifest.json
 apps/web/public/thumbnails
 apps/web/public/photos
 apps/web/public/originals
+apps/ssr/next-env.d.ts
