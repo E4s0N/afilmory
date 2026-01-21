@@ -8,7 +8,7 @@ export default defineBuilderConfig(() => ({
     branch: 'main',
     path: 'photos',
     // useRawUrl: true, // Use raw.githubusercontent.com CDN
-    customDomain: 'cdn.jsdelivr.net/gh/E4s0N/afilmory',
+    customDomain: 'niceimg.com/afilmory',
   },
   system: {
     processing: {
