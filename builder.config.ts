@@ -2,12 +2,11 @@ import os from 'node:os'
 
 import { defineBuilderConfig, githubRepoSyncPlugin } from '@afilmory/builder'
 
-
 export default defineBuilderConfig(() => ({
   storage: {
     provider: 'github',
     owner: 'E4s0N',
-    repo: 'afilmory-gallery',
+    repo: 'afilmory',
     branch: 'main',
     path: 'photos',
     useRawUrl: true, // Use raw.githubusercontent.com CDN
