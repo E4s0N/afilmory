@@ -7,8 +7,8 @@ export default defineBuilderConfig(() => ({
     repo: 'afilmory',
     branch: 'main',
     path: 'photos',
-    useRawUrl: true, // Use raw.githubusercontent.com CDN
-    customDomain: 'gh-proxy.org',
+    // useRawUrl: true, // Use raw.githubusercontent.com CDN
+    customDomain: 'cdn.jsdelivr.net/gh/E4s0N/afilmory',
   },
   system: {
     processing: {
