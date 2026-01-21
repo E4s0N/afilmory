@@ -34,12 +34,11 @@ export default defineBuilderConfig(() => ({
   // plugins: [thumbnailStoragePlugin()],
   plugins: [
     githubRepoSyncPlugin({
-      enable: true,
-      autoPush: true,
       repo: {
-        url: 'https://github.com/E4s0N/afilmory-cache',
+        enable: true,
+        url: process.env.BUILDER_REPO_URL ?? '',
         token: process.env.GIT_TOKEN,
-        branch: 'main',
+        branch: process.env.BUILDER_REPO_BRANCH ?? 'main',
       },
     }),
   ],
