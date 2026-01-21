@@ -27,6 +27,7 @@ export default defineBuilderConfig(() => ({
       },
       performance: {
         worker: {
+          useClusterMode: false,
           workerCount: os.cpus().length * 2,
           timeout: 30_000,
           useClusterMode: true,
