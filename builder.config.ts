@@ -1,4 +1,3 @@
-
 import { defineBuilderConfig, githubRepoSyncPlugin } from '@afilmory/builder'
 
 export default defineBuilderConfig(() => ({
@@ -8,7 +7,8 @@ export default defineBuilderConfig(() => ({
     repo: 'afilmory',
     branch: 'main',
     path: 'photos',
-    useRawUrl: true, // Use raw.githubusercontent.com CDN
+    // useRawUrl: true, // Use raw.githubusercontent.com CDN
+    customDomain: 'gh-proxy.org',
   },
   system: {
     processing: {
