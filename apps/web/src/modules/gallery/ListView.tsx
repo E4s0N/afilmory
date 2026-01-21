@@ -173,10 +173,18 @@ const PhotoCard = ({ photo }: { photo: PhotoManifest }) => {
               </div>
             )}
 
-            {/* 日期 */}
+            {/* 拍摄日期 */}
+            {exifData?.dateTime && (
+              <div className="flex items-center gap-1">
+                <i className="i-lucide-calendar text-[10px]" />
+                <span>shot on {formatDate(new Date(exifData.dateTime).getTime())}</span>
+              </div>
+            )}
+
+            {/* 更新日期 */}
             <div className="flex items-center gap-1">
               <i className="i-lucide-calendar text-[10px]" />
-              <span>{formatDate(new Date(photo.lastModified).getTime())}</span>
+              <span>up on {formatDate(new Date(photo.lastModified).getTime())}</span>
             </div>
 
             {/* 相机 */}
