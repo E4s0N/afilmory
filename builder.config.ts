@@ -1,4 +1,3 @@
-import os from 'node:os'
 
 import { defineBuilderConfig, githubRepoSyncPlugin } from '@afilmory/builder'
 
@@ -28,10 +27,6 @@ export default defineBuilderConfig(() => ({
       performance: {
         worker: {
           useClusterMode: false,
-          workerCount: os.cpus().length * 2,
-          timeout: 30_000,
-          useClusterMode: true,
-          workerConcurrency: 1,
         },
       },
     },
