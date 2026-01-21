@@ -32,7 +32,7 @@ export default defineBuilderConfig(() => ({
           workerCount: os.cpus().length * 2,
           timeout: 30_000,
           useClusterMode: true,
-          workerConcurrency: 1,
+          workerConcurrency: 2,
         },
       },
     },
