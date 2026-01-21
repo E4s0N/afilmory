@@ -8,7 +8,7 @@ export default defineBuilderConfig(() => ({
     branch: 'main',
     path: 'photos',
     useRawUrl: true, // Use raw.githubusercontent.com CDN
-    customDomain: 'gh-proxy.orgraw',
+    customDomain: 'gh-proxy.org',
   },
   system: {
     processing: {
