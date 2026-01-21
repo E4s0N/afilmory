@@ -7,6 +7,7 @@ export default defineBuilderConfig(() => ({
     repo: 'afilmory',
     branch: 'main',
     path: 'photos',
+    token: process.env.GIT_TOKEN,
     // useRawUrl: true, // Use raw.githubusercontent.com CDN
     customDomain: 'niceimg.com/afilmory',
   },

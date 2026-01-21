@@ -2,7 +2,7 @@
   "name": "TK's Photo Gallery",
   "title": "TK's Photo Gallery",
   "description": "Capturing beautiful moments in life, documenting daily warmth and emotions through my lens.",
-  "url": "https://niceimg.com",
+  "url": "https://tk.niceimg.com",
   "accentColor": "#fb7185",
   "ogImage": {
     "width": 1200,
@@ -11,10 +11,10 @@
   "author": {
     "name": "Photo Gallery",
     "url": "https://drtk.cn",
-    "avatar": "//cdn.jsdelivr.net/gh/Innei/static@master/avatar.png"
+    "avatar": "https://cdn.jsdelivr.net/gh/E4s0N/afilmory/Avatar_Morty.png"
   },
   "social": {
-    "twitter": "@__oQuery"
+    "github": "https://github.com/E4s0N"
   },
   "extra": {
     "accessRepo": true
